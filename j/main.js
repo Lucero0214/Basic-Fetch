@@ -15,7 +15,7 @@ fetch("houses.json")
             let objInfo = `<p class="house">${house.name}</p>
         <p class="folks">${family}</p>`;
             html += objInfo;
-        });
+        })
 
         document.getElementById("container").innerHTML = Object.values(houses);
         //make a reference to the html container where
@@ -26,5 +26,4 @@ fetch("houses.json")
       .catch((data) => console.log("data"))
   {
     console.log("error")
-  }
-    //this only runs if there is an error during the above process
+  };
